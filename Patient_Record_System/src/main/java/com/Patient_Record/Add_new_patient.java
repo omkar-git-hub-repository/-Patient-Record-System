@@ -36,6 +36,7 @@ public void AddPatients() {
 	    
 	    System.out.println("Enter patient Age: ");
 	    p.setAge(sc.nextInt());
+	    sc.nextLine();
 	    
 	    System.out.println("Enter patient Disease: ");
 	    p.setDisease(sc.nextLine());
