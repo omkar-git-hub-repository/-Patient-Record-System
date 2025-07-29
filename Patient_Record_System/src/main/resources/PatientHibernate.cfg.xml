@@ -25,6 +25,5 @@
 		<mapping class="com.Patient.Entity.Patients" />
 		<mapping class="com.Patient.Entity.PatientDieses" />
 
-
 	</session-factory>
 </hibernate-configuration>
