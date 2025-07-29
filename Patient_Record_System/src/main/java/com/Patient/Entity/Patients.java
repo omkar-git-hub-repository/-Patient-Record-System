@@ -1,7 +1,12 @@
 package com.Patient.Entity;
 
+import java.util.List;
+
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -14,8 +19,22 @@ public class Patients {
 
 	private int age;
 	private String disease;
-
 	private String admittedDate;
+
+
+	@OneToMany(cascade = CascadeType.ALL)
+	@JoinTable(name = "Patients_Id")
+	private List<PatientDieses> patientdieses;
+
+	
+
+	public List<PatientDieses> getPatientdieses() {
+		return patientdieses;
+	}
+
+	public void setPatientdieses(List<PatientDieses> patientdieses) {
+		this.patientdieses = patientdieses;
+	}
 
 	public int getId() {
 		return id;
