@@ -12,7 +12,8 @@ public class App {
 				+ "\n2.Delete Patient By Id"
 				+ "\n3.Update Desiese"
 				+ "\n4 Get All PAtients Details :" 
-				+ "\n5.Exit");
+				+ "\n5.Set Patient data "
+				+ "\n6. Exit");
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter Your Choice");
@@ -42,6 +43,11 @@ public class App {
 			break;
 
 		case 5:
+			SetPatient sp = new SetPatient();
+			sp.setPatientData();
+			break;
+		
+		case 6:
 			System.out.println("Exiting program. Goodbye!");
 			System.exit(0); // Terminates the program immediately
 			break;

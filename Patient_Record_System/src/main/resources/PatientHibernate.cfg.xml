@@ -23,6 +23,8 @@
 		<property name="hibernate.hbm2ddl.auto">update</property>
 
 		<mapping class="com.Patient.Entity.Patients" />
+		<mapping class="com.Patient.Entity.PatientDieses" />
+
 
 	</session-factory>
 </hibernate-configuration>
