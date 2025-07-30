@@ -49,7 +49,7 @@ public class App {
 		
 		case 6:
 			System.out.println("Exiting program. Goodbye!");
-			System.exit(0); // Terminates the program immediately
+			System.exit(0); 
 			break;
 		}
 	}

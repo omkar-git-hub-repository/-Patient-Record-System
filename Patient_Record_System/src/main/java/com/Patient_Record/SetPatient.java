@@ -20,7 +20,6 @@ public class SetPatient {
         Session session = factory.openSession();
         Transaction transaction = session.beginTransaction();
         
-        
         Patients p = new Patients();
         p.setId(106);
         p.setAdmittedDate("5-6-23");
@@ -43,14 +42,12 @@ public class SetPatient {
         PatientDieses  pd4 = new PatientDieses();
         pd.setDieses("Kideny Failure");
 
-
         List<PatientDieses> diseaseList  = Arrays.asList(pd, pd1, pd2, pd3, pd4);
         p.setPatientdieses(diseaseList);
 
         session.persist(p);
         transaction.commit();
         session.close();
-
 
     }
 

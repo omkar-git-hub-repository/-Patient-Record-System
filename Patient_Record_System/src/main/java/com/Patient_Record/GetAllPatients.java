@@ -28,6 +28,7 @@ public class GetAllPatients {
 
 		transaction.commit();
 		session.close();
+		
 	}
 
 }
