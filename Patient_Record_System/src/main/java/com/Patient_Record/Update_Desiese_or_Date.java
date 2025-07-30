@@ -1,23 +1,17 @@
 package com.Patient_Record;
 
 import java.util.Scanner;
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-
 import com.Patient.Entity.Patients;
-
 import patient.Utility.HibernateUtility;
-
 public class Update_Desiese_or_Date {
 
 	public void updateDetails() {
 
 		SessionFactory factory = HibernateUtility.getSessionFactory();
-
 		Session session = factory.openSession();
-
 		Transaction transaction = session.beginTransaction();
 
 		Scanner sc = new Scanner(System.in);
