@@ -22,6 +22,8 @@ public class GetAllPatients {
 
 		// 3. Transaction from session
 		Transaction transaction = session.beginTransaction();
+
+		System.out.println("All Patients : \n");
 		
 		List<Patients> studentlist = session.createQuery("SELECT p FROM Patients p", Patients.class).getResultList();
 		studentlist.stream().forEach(k -> System.out.println(k.toString()));

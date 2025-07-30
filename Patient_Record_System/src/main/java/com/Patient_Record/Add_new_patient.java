@@ -7,7 +7,6 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
 import com.Patient.Entity.Patients;
-
 import patient.Utility.HibernateUtility;
 
 public class Add_new_patient {

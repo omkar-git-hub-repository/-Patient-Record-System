@@ -1,13 +1,10 @@
 package com.Patient_Record;
 
 import java.util.Scanner;
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-
 import com.Patient.Entity.Patients;
-
 import patient.Utility.HibernateUtility;
 
 public class DeletePatientByID {
@@ -29,13 +26,10 @@ public class DeletePatientByID {
 
 				Patients st = session.find(Patients.class, Id);
 				session.remove(st);
-				
-				
-				
+
+				// save the session
 				transaction.commit();
-				
-				session.clear();
-				
+				session.clear();	
 		}	
 
 }

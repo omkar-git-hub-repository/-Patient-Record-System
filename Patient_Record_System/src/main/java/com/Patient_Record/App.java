@@ -1,5 +1,4 @@
 package com.Patient_Record;
-
 import java.util.Scanner;
 
 public class App {
